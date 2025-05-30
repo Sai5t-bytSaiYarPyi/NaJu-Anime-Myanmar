@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NaJu Anime Myanmar</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-white font-sans">
+    <!-- Header/Navbar -->
+    <header class="bg-gray-800 shadow-lg sticky top-0 z-50">
+        <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <!-- Logo -->
+            <a href="/" class="text-2xl font-bold text-pink-500">NaJu Anime Myanmar</a>
+
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex items-center space-x-6">
+                <a href="#" class="hover:text-pink-400">Home</a>
+                <a href="#" class="hover:text-pink-400">Anime List</a>
+                <a href="#" class="hover:text-pink-400">Latest Episodes</a>
+                <!-- Genres Dropdown -->
+                <div class="relative group">
+                    <button class="hover:text-pink-400">Genres</button>
+                    <div class="absolute hidden group-hover:block bg-gray-700 rounded-lg shadow-lg mt-2 py-2 w-40">
+                        <a href="#" class="block px-4 py-2 hover:bg-gray-600">Action</a>
+                        <a href="#" class="block px-4 py-2 hover:bg-gray-600">Romance</a>
+                        <a href="#" class="block px-4 py-2 hover:bg-gray-600">Mecha</a>
+                        <a href="#" class="block px-4 py-2 hover:bg-gray-600">Horror</a>
+                    </div>
+                </div>
+                <!-- Login/Sign Up Button -->
+                <a href="#" class="bg-pink-500 text-white px-4 py-2 rounded-lg hover:bg-pink-600">Login / Sign Up</a>
+            </div>
+
+            <!-- Mobile Hamburger Menu -->
+            <div class="md:hidden">
+                <button class="text-white focus:outline-none" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-gray-800">
+            <a href="#" class="block px-4 py-2 hover:bg-gray-700">Home</a>
+            <a href="#" class="block px-4 py-2 hover:bg-gray-700">Anime List</a>
+            <a href="#" class="block px-4 py-2 hover:bg-gray-700">Latest Episodes</a>
+            <a href="#" class="block px-4 py-2 hover:bg-gray-700">Genres</a>
+            <a href="#" class="block px-4 py-2 bg-pink-500 text-center hover:bg-pink-600">Login / Sign Up</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative h-96 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1618005182380-5f7a28e39729?auto=format&fit=crop&w=1920&q=80')">
+        <div class="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center">
+            <div class="text-center">
+                <h1 class="text-4xl md:text-5xl font-bold mb-4">Welcome to NaJu Anime Myanmar</h1>
+                <p class="text-lg md:text-xl mb-6">Stream the latest anime episodes and explore your favorite genres!</p>
+                <a href="#" class="bg-pink-500 text-white px-6 py-3 rounded-lg hover:bg-pink-600">Watch Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Anime Section -->
+    <section class="container mx-auto px-4 py-12">
+        <h2 class="text-3xl font-bold mb-6">Popular Anime</h2>
+        <div class="flex overflow-x-auto space-x-4 pb-4">
+            <!-- Anime Card 1 -->
+            <div class="min-w-[200px] bg-gray-800 rounded-lg shadow-lg overflow-hidden hover:scale-105 transition-transform">
+                <img src="https://via.placeholder.com/200x300" alt="Anime 1" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h3 class="font-semibold text-lg">Anime Title 1</h3>
+                    <p class="text-sm text-gray-400">Episode 12 - Ongoing</p>
+                </div>
+            </div>
+            <!-- Anime Card 2 -->
+            <div class="min-w-[200px] bg-gray-800 rounded-lg shadow-lg overflow-hidden hover:scale-105 transition-transform">
+                <img src="https://via.placeholder.com/200x300" alt="Anime 2" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h3 class="font-semibold text-lg">Anime Title 2</h3>
+                    <p class="text-sm text-gray-400">Episode 24 - Completed</p>
+                </div>
+            </div>
+            <!-- Anime Card 3 -->
+            <div class="min-w-[200px] bg-gray-800 rounded-lg shadow-lg overflow-hidden hover:scale-105 transition-transform">
+                <img src="https://via.placeholder.com/200x300" alt="Anime 3" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h3 class="font-semibold text-lg">Anime Title 3</h3>
+                    <p class="text-sm text-gray-400">Episode 8 - Ongoing</p>
+                </div>
+            </div>
+            <!-- Anime Card 4 -->
+            <div class="min-w-[200px] bg-gray-800 rounded-lg shadow-lg overflow-hidden hover:scale-105 transition-transform">
+                <img src="https://via.placeholder.com/200x300" alt="Anime 4" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h3 class="font-semibold text-lg">Anime Title 4</h3>
+                    <p class="text-sm text-gray-400">Episode 16 - Ongoing</p>
+                </div>
+            </div>
+            <!-- Anime Card 5 -->
+            <div class="min-w-[200px] bg-gray-800 rounded-lg shadow-lg overflow-hidden hover:scale-105 transition-transform">
+                <img src="https://via.placeholder.com/200x300" alt="Anime 5" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h3 class="font-semibold text-lg">Anime Title 5</h3>
+                    <p class="text-sm text-gray-400">Episode 10 - Completed</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Genres Grid -->
+    <section class="container mx-auto px-4 py-12">
+        <h2 class="text-3xl font-bold mb-6">Explore Genres</h2>
+        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
+            <a href="#" class="bg-pink-500 text-white text-center py-2 rounded-full hover:bg-pink-600">Action</a>
+            <a href="#" class="bg-pink-500 text-white text-center py-2 rounded-full hover:bg-pink-600">Romance</a>
+            <a href="#" class="bg-pink-500 text-white text-center py-2 rounded-full hover:bg-pink-600">Mecha</a>
+            <a href="#" class="bg-pink-500 text-white text-center py-2 rounded-full hover:bg-pink-600">Horror</a>
+            <a href="#" class="bg-pink-500 text-white text-center py-2 rounded-full hover:bg-pink-600">Fantasy</a>
+            <a href="#" class="bg-pink-500 text-white text-center py-2 rounded-full hover:bg-pink-600">Adventure</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 py-8">
+        <div class="container mx-auto px-4 text-center">
+            <h3 class="text-xl font-bold mb-4">NaJu Anime Myanmar</h3>
+            <div class="flex justify-center space-x-4 mb-4">
+                <a href="#" class="hover:text-pink-400">About Us</a>
+                <a href="#" class="hover:text-pink-400">Contact</a>
+            </div>
+            <div class="flex justify-center space-x-4">
+                <a href="#" class="hover:text-pink-400">Facebook</a>
+                <a href="#" class="hover:text-pink-400">Twitter</a>
+                <a href="#" class="hover:text-pink-400">Instagram</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watch Episode - NaJu Anime Myanmar</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-white font-sans">
+    <!-- Header/Navbar -->
+    <header class="bg-gray-800 shadow-lg sticky top-0 z-50">
+        <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <!-- Logo -->
+            <a href="/" class="text-2xl font-bold text-pink-500">NaJu Anime Myanmar</a>
+
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex items-center space-x-6">
+                <a href="#" class="hover:text-pink-400">Home</a>
+                <a href="#" class="hover:text-pink-400">Anime List</a>
+                <a href="#" class="hover:text-pink-400">Latest Episodes</a>
+                <!-- Genres Dropdown -->
+                <div class="relative group">
+                    <button class="hover:text-pink-400">Genres</button>
+                    <div class="absolute hidden group-hover:block bg-gray-700 rounded-lg shadow-lg mt-2 py-2 w-40">
+                        <a href="#" class="block px-4 py-2 hover:bg-gray-600">Action</a>
+                        <a href="#" class="block px-4 py-2 hover:bg-gray-600">Romance</a>
+                        <a href="#" class="block px-4 py-2 hover:bg-gray-600">Mecha</a>
+                        <a href="#" class="block px-4 py-2 hover:bg-gray-600">Horror</a>
+                    </div>
+                </div>
+                <!-- Login/Sign Up Button -->
+                <a href="#" class="bg-pink-500 text-white px-4 py-2 rounded-lg hover:bg-pink-600">Login / Sign Up</a>
+            </div>
+
+            <!-- Mobile Hamburger Menu -->
+            <div class="md:hidden">
+                <button class="text-white focus:outline-none" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-gray-800">
+            <a href="#" class="block px-4 py-2 hover:bg-gray-700">Home</a>
+            <a href="#" class="block px-4 py-2 hover:bg-gray-700">Anime List</a>
+            <a href="#" class="block px-4 py-2 hover:bg-gray-700">Latest Episodes</a>
+            <a href="#" class="block px-4 py-2 hover:bg-gray-700">Genres</a>
+            <a href="#" class="block px-4 py-2 bg-pink-500 text-center hover:bg-pink-600">Login / Sign Up</a>
+        </div>
+    </header>
+
+    <!-- Video Player Section -->
+    <section class="container mx-auto px-4 py-12">
+        <div class="w-full max-w-4xl mx-auto">
+            <!-- Video Player -->
+            <div class="w-full aspect-video mb-6">
+                <iframe class="w-full h-full rounded-lg" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Episode Video" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <!-- Anime Info -->
+            <div class="text-center md:text-left">
+                <h1 class="text-3xl md:text-4xl font-bold mb-2">The Beginning After The End</h1>
+                <p class="text-lg text-gray-400 mb-1">Episode 5</p>
+                <p class="text-lg text-gray-400">Watch Time: 24 minutes</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Episode Navigation -->
+    <section class="container mx-auto px-4 pb-12">
+        <div class="flex justify-center space-x-4">
+            <a href="#" class="bg-gray-700 text-white px-6 py-2 rounded-lg hover:bg-gray-600">Previous Episode</a>
+            <a href="#" class="bg-pink-500 text-white px-6 py-2 rounded-lg hover:bg-pink-600">Next Episode</a>
+        </div>
+    </section>
+
+    <!-- Episode Description -->
+    <section class="container mx-auto px-4 pb-12">
+        <h2 class="text-2xl font-bold mb-4">Episode Summary</h2>
+        <p class="text-gray-300 mb-4">
+            In this thrilling episode, the protagonist faces a new challenge as they uncover hidden secrets about their past. Action-packed battles and emotional moments intertwine, leading to an unexpected twist that sets the stage for the next adventure.
+        </p>
+        <p class="text-gray-400">Release Date: May 15, 2025 | Status: Aired</p>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 py-8">
+        <div class="container mx-auto px-4 text-center">
+            <h3 class="text-xl font-bold mb-4">NaJu Anime Myanmar</h3>
+            <div class="flex justify-center space-x-4 mb-4">
+                <a href="#" class="hover:text-pink-400">About Us</a>
+                <a href="#" class="hover:text-pink-400">Contact</a>
+            </div>
+            <div class="flex justify-center space-x-4">
+                <a href="#" class="hover:text-pink-400">Facebook</a>
+                <a href="#" class="hover:text-pink-400">Twitter</a>
+                <a href="#" class="hover:text-pink-400">Instagram</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

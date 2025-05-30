@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile - NaJu Anime Myanmar</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-white font-sans">
+    <!-- Header/Navbar -->
+    <header class="bg-gray-800 shadow-lg sticky top-0 z-50">
+        <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <!-- Logo -->
+            <a href="/" class="text-2xl font-bold text-pink-500">NaJu Anime Myanmar</a>
+
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex items-center space-x-6">
+                <a href="#" class="hover:text-pink-400">Home</a>
+                <a href="#" class="hover:text-pink-400">Anime List</a>
+                <a href="#" class="hover:text-pink-400">Latest Episodes</a>
+                <!-- Genres Dropdown -->
+                <div class="relative group">
+                    <button class="hover:text-pink-400">Genres</button>
+                    <div class="absolute hidden group-hover:block bg-gray-700 rounded-lg shadow-lg mt-2 py-2 w-40">
+                        <a href="#" class="block px-4 py-2 hover:bg-gray-600">Action</a>
+                        <a href="#" class="block px-4 py-2 hover:bg-gray-600">Romance</a>
+                        <a href="#" class="block px-4 py-2 hover:bg-gray-600">Mecha</a>
+                        <a href="#" class="block px-4 py-2 hover:bg-gray-600">Horror</a>
+                    </div>
+                </div>
+                <!-- Logout Button -->
+                <a href="#" class="bg-pink-500 text-white px-4 py-2 rounded-lg hover:bg-pink-600">Logout</a>
+            </div>
+
+            <!-- Mobile Hamburger Menu -->
+            <div class="md:hidden">
+                <button class="text-white focus:outline-none" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-gray-800">
+            <a href="#" class="block px-4 py-2 hover:bg-gray-700">Home</a>
+            <a href="#" class="block px-4 py-2 hover:bg-gray-700">Anime List</a>
+            <a href="#" class="block px-4 py-2 hover:bg-gray-700">Latest Episodes</a>
+            <a href="#" class="block px-4 py-2 hover:bg-gray-700">Genres</a>
+            <a href="#" class="block px-4 py-2 bg-pink-500 text-center hover:bg-pink-600">Logout</a>
+        </div>
+    </header>
+
+    <!-- User Profile Section -->
+    <section class="container mx-auto px-4 py-12">
+        <div class="max-w-md mx-auto bg-gray-800 rounded-lg shadow-lg p-8 text-center">
+            <img src="https://via.placeholder.com/150" alt="User Avatar" class="w-24 h-24 rounded-full mx-auto mb-4">
+            <h2 class="text-2xl font-bold mb-2">AnimeFan123</h2>
+            <p class="text-gray-400 mb-2">animefan123@example.com</p>
+            <p class="text-gray-400 mb-4">Joined: January 15, 2025</p>
+            <a href="#" class="bg-pink-500 text-white px-4 py-2 rounded-lg hover:bg-pink-600">Edit Profile</a>
+        </div>
+    </section>
+
+    <!-- User Activity Section -->
+    <section class="container mx-auto px-4 py-12">
+        <!-- Recently Watched -->
+        <h2 class="text-2xl font-bold mb-6">Recently Watched</h2>
+        <div class="space-y-4 mb-12">
+            <div class="flex items-center bg-gray-800 rounded-lg p-4">
+                <img src="https://via.placeholder.com/100x150" alt="Anime 1" class="w-16 h-24 rounded mr-4">
+                <div>
+                    <h3 class="font-semibold">Anime Title 1 - Episode 5</h3>
+                    <p class="text-gray-400 text-sm">Watched: May 20, 2025</p>
+                </div>
+            </div>
+            <div class="flex items-center bg-gray-800 rounded-lg p-4">
+                <img src="https://via.placeholder.com/100x150" alt="Anime 2" class="w-16 h-24 rounded mr-4">
+                <div>
+                    <h3 class="font-semibold">Anime Title 2 - Episode 3</h3>
+                    <p class="text-gray-400 text-sm">Watched: May 18, 2025</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Favorites -->
+        <h2 class="text-2xl font-bold mb-6">Favorites</h2>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <div class="bg-gray-800 rounded-lg shadow-lg overflow-hidden hover:scale-105 transition-transform">
+                <img src="https://via.placeholder.com/200x300" alt="Anime 1" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h3 class="font-semibold text-lg">Anime Title 1</h3>
+                </div>
+            </div>
+            <div class="bg-gray-800 rounded-lg shadow-lg overflow-hidden hover:scale-105 transition-transform">
+                <img src="https://via.placeholder.com/200x300" alt="Anime 2" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h3 class="font-semibold text-lg">Anime Title 2</h3>
+                </div>
+            </div>
+            <div class="bg-gray-800 rounded-lg shadow-lg overflow-hidden hover:scale-105 transition-transform">
+                <img src="https://via.placeholder.com/200x300" alt="Anime 3" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h3 class="font-semibold text-lg">Anime Title 3</h3>
+                </div>
+            </div>
+            <div class="bg-gray-800 rounded-lg shadow-lg overflow-hidden hover:scale-105 transition-transform">
+                <img src="https://via.placeholder.com/200x300" alt="Anime 4" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h3 class="font-semibold text-lg">Anime Title 4</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Edit Profile Section -->
+    <section class="container mx-auto px-4 py-12">
+        <h2 class="text-2xl font-bold mb-6">Edit Profile</h2>
+        <div class="max-w-md mx-auto bg-gray-800 rounded-lg shadow-lg p-8">
+            <form action="#">
+                <div class="mb-4">
+                    <label for="edit-username" class="block text-sm text-gray-300 mb-2">Username</label>
+                    <input type="text" id="edit-username" value="AnimeFan123" class="w-full bg-gray-700 text-white rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-pink-500">
+                </div>
+                <div class="mb-4">
+                    <label for="edit-email" class="block text-sm text-gray-300 mb-2">Email</label>
+                    <input type="email" id="edit-email" value="animefan123@example.com" class="w-full bg-gray-700 text-white rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-pink-500">
+                </div>
+                <div class="mb-4">
+                    <label for="edit-password" class="block text-sm text-gray-300 mb-2">New Password</label>
+                    <input type="password" id="edit-password" class="w-full bg-gray-700 text-white rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-pink-500" placeholder="Enter new password">
+                </div>
+                <button type="submit" class="w-full bg-pink-500 text-white py-2 rounded-lg hover:bg-pink-600">Save Changes</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 py-8">
+        <div class="container mx-auto px-4 text-center">
+            <h3 class="text-xl font-bold mb-4">NaJu Anime Myanmar</h3>
+            <div class="flex justify-center space-x-4 mb-4">
+                <a href="#" class="hover:text-pink-400">About Us</a>
+                <a href="#" class="hover:text-pink-400">Contact</a>
+            </div>
+            <div class="flex justify-center space-x-4">
+                <a href="#" class="hover:text-pink-400">Facebook</a>
+                <a href="#" class="hover:text-pink-400">Twitter</a>
+                <a href="#" class="hover:text-pink-400">Instagram</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
